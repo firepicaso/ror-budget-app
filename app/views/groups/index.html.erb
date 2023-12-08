@@ -1,2 +1,31 @@
-<h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
+<header>
+  <h1>Categories</h1>
+</header>
+<main>
+  <section>
+    <% if @groups.empty? %>
+        <div class="empty">
+            <p>Please add a new category</p>
+        </div>
+    <% end %>
+
+    <ul class="group_list">
+        <% @groups.each do |group| %>
+            <% total_amount = total_amount(group) %>
+            <li>
+                <%= link_to group_purchases_url(group), data: { turbo: false }, class: 'item' do %>
+                    <%= image_tag(check_url(group.icon), class: 'icon', alt: 'group_icon') %>
+                    <div class="group_info">
+                        <span class="name"><%= group.name %></span>
+                        <span class="amount">$<%= total_amount %></span>
+                        <span class="date"><%= group.created_at.strftime('%d %b %Y') %></span>
+                    </div>
+                <% end %>
+            </li>
+        <% end %>
+    </ul>
+  </section>
+  <section>
+    <%= link_to "Add a Category", new_group_path, class: "btn", data: { turbo: false }  %>
+  </section>
+</main>

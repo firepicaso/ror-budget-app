@@ -1,40 +1,40 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .splash-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .splash-appicon {
-    margin: 15rem 0;
+  margin: 15rem 0;
 }
 
 .splash-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login-button {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(44, 148, 233);
-    padding: 1rem;
-    border-radius: 0.25rem;
-    width: 95vw;
-    margin: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44, 148, 233);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 95vw;
+  margin: 1rem;
 }
 
 .login-button a {
-    color: white;
+  color: white;
 }
 
 .signup-button a {
-    color: black;    
+  color: black;
 }
