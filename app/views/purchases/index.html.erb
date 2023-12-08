@@ -13,14 +13,14 @@
     <% end %>
 
     <ul>
-        <% @purchases.each do |purchase| %>
-            <li>
-                <%= link_to group_purchase_url(@group, purchase) do %>
-                    <span><%= purchase.name %></span>
-                    <span><%= purchase.amount %></span>
-                <% end %>
-            </li>
-        <% end %>
+      <% @purchases.each do |purchase| %>
+        <li>
+          <%= link_to group_purchase_url(@group, purchase) do %>
+            <span><%= purchase.name %></span>
+            <span><%= purchase.amount %></span>
+          <% end %>
+        </li>
+      <% end %>
     </ul>
   </section>
   <section>

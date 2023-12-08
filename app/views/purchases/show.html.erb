@@ -1,2 +1,13 @@
-<h1>Purchases#show</h1>
-<p>Find me in app/views/purchases/show.html.erb</p>
+<header>
+  <h1>Details</h1>
+</header>
+<main>
+  <section>
+    <span><%= @purchase.name %></span>
+    <span><%= @purchase.amount %></span>
+  </section>
+  <section>
+    <%= link_to "edit", edit_group_purchase_path(params[:group_id], @purchase) %>
+    <%= button_to "delete",  {:controller => :purchases, :action => 'destroy'}, method: :delete %>
+  </section>
+</main>
