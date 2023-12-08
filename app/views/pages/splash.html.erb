@@ -1,1 +1,13 @@
-<h1>Splash Screen</h1>
+<div class="splash-container">
+  <div class="splash-appicon">
+    <h1>BudgetLover</h1>
+  </div>
+  <div class="splash-buttons">
+    <div class="login-button">
+      <%= link_to "LOG IN", new_user_session_path, data: { turbo: false } %>
+    </div>
+    <div class="signup-button">
+      <%= link_to "SIGN UP", new_user_registration_path, data: { turbo: false } %>
+    </div>
+  </div>
+</div>

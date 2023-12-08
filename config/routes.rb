@@ -8,8 +8,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
-  root "groups#index"
 
   devise_scope :user do
     authenticated :user do
@@ -20,7 +18,7 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :groups do
+  resources :groups, only: [:index, :new, :create, :edit, :update, :destroy] do
     resources :purchases
   end
 
