@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe 'When I open Groups index page', type: :feature do
   before(:each) do
     @user = User.create(name: 'dan', email: 'dan@example.com', password: 'password')
-    # @user.confirm
     sleep(1)
     
     visit new_user_session_path
@@ -12,9 +11,7 @@ RSpec.describe 'When I open Groups index page', type: :feature do
     click_button 'Log in'
     
     @group1 = Group.create(user: @user, name: 'Office', icon: 'default.png')
-    sleep(1)
     @purchase1 = Purchase.create(name: 'Paper', amount: 10.0, author: @user, groups: [@group1])
-    sleep(1)
 
     visit(groups_path)
   end
