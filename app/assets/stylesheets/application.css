@@ -61,6 +61,6 @@ h1 {
   color: var(--text-color1);
 }
 
-.splash-appicon {
+.splash-appicon h1 {
   color: var(--text-color2);
 }
