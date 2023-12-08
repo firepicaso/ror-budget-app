@@ -60,3 +60,7 @@ header {
 h1 {
   color: var(--text-color1);
 }
+
+.splash-appicon {
+  color: var(--text-color2);
+}
