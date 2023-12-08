@@ -38,3 +38,20 @@
 .signup-button a {
   color: black;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(44, 148, 233);
+  padding: 10px;
+}
+
+.back-button img {
+  margin-right: 10px; /* Adjust the margin as needed */
+  max-width: 30px; /* Adjust the max-width as needed */
+}
+
+h1 {
+  margin: 0;
+  color: white; /* Adjust the color as needed */
+}
