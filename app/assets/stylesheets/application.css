@@ -43,15 +43,14 @@ header {
   display: flex;
   align-items: center;
   background-color: rgb(44, 148, 233);
-  padding: 10px;
+  padding: 0.5rem 1rem;
 }
 
 .back-button img {
-  margin-right: 10px; /* Adjust the margin as needed */
-  max-width: 30px; /* Adjust the max-width as needed */
+  margin-right: 40px;
+  max-width: 30px;
 }
 
 h1 {
-  margin: 0;
-  color: white; /* Adjust the color as needed */
+  color: white;  
 }
