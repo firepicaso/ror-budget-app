@@ -5,14 +5,8 @@ RSpec.describe Purchase, type: :model do
   let(:no_name) { { 'author' => @user, 'amount' => 1 } }
   let(:no_author) { { 'name' => 'Electric Kettle', 'amount' => 1 } }
   let(:no_amount) { { 'author' => @user, 'name' => 'Electric Kettle' } }
-  let(:amount_string) do
-    { 'author' => @user, 'name' => 'Electric Kettle', 'amount' => 'two' }
-  end
   let(:amount_float) do
     { 'author' => @user, 'name' => 'Electric Kettle', 'amount' => 20.0 }
-  end
-  let(:amount_negative) do
-    { 'author' => @user, 'name' => 'Electric Kettle', 'amount' => -2 }
   end
 
   before :all do
