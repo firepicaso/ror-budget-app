@@ -2,26 +2,18 @@
   <%= link_to(image_tag('back.png', alt: 'Back'), group_purchases_path(params[:group_id]), class: 'back-button') %>
   <h1>New Transaction</h1>
 </header>
-<main>
-  <section>
+<main class="g-bg">
+  <section class="w-bg">
     <%= form_with(url: group_purchases_path, model: @purchase, class: "form") do |f| %>
       <div class="field">
-        <%= f.label :name, "name" %>
-        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Name of service" %>
+        <%= f.text_field :name, autocomplete: "name", placeholder: "Name of service" %>
       </div>
-
       <div class="field">
-        <%= f.label :amount, "amount" %>
-        <%= f.text_field :amount, autofocus: true, autocomplete: "amount", placeholder: "$10" %>
+        <%= f.text_field :amount, autocomplete: "amount", placeholder: "$10" %>
       </div>
-
       <div class="checkbox">
-        <%= f.label :amount, "categories", class: "categories_label" %><br />
         <%= f.collection_check_boxes :group_ids, current_user.groups, :id, :name, :include_hidden => false %>
-        <span>No matching category?</span>
-        <%= link_to "add a new category", new_group_path, data: { turbo: false }, class: "static"  %>
       </div>
-
       <div class="button">
         <%= f.submit "Add a Transaction", data: { turbo: false }, class: "btn"  %>
       </div>

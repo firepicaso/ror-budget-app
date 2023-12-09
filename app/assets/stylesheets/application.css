@@ -166,3 +166,16 @@ h1 {
   padding-top: 1rem;
   margin: 0 1rem;
 }
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  color: var(--darker-grey);
+}
+
+.checkbox input {
+  width: auto;
+}
