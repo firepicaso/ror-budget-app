@@ -209,3 +209,11 @@ h1 {
 .button a {
   color: var(--pure-white);
 }
+
+.button input {
+  padding: 0;
+  border: 0;
+  background-color: unset;
+  color: var(--pure-white);
+  font-size: 1rem;
+}

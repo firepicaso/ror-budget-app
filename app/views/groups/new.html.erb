@@ -11,8 +11,8 @@
       <div class="field">
         <%= f.text_field :icon, autofocus: true, autocomplete: "icon", value: 'default.png', placeholder: "Icon Link" %>
       </div>
-        <div class="actions">
-        <%= f.submit "Add a Category", data: { turbo: false }, class: "btn" %>
+      <div class="button">
+        <%= f.submit "Add a Category", data: { turbo: false } %>
       </div>
     <% end %>
   </section>
