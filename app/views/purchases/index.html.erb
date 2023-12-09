@@ -21,8 +21,10 @@
       <% @purchases.each do |purchase| %>
         <li>
           <%= link_to group_purchase_url(@group, purchase) do %>
-            <span><%= purchase.name %></span>
-            <span>$<%= purchase.amount %></span>
+            <div class="purchase-details">
+              <span><%= purchase.name %></span>
+              <span>$<%= purchase.amount %></span>
+            </div>
           <% end %>
         </li>
       <% end %>
