@@ -1,6 +1,7 @@
 :root {
   --primary-color: #3778c2;
   --grey-background: #F4F5F8;
+  --light-grey: rgb(227, 227, 227);
   --pure-white: white;
   --pure-black: black;
 }
@@ -17,7 +18,7 @@
 }
 
 .w-bg {
-  background-color: var(--pure-white);  
+  background-color: var(--pure-white);
 }
 
 .splash-container {
@@ -39,6 +40,7 @@
 .login-button {
   display: flex;
   justify-content: center;
+  background-color: var(--primary-color);
   padding: 1rem;
   border-radius: 0.25rem;
   width: 95vw;
@@ -47,10 +49,12 @@
 
 .login-button a {
   color: var(--pure-white);
+  text-decoration: none;
 }
 
 .signup-button a {
   color: var(--pure-black);
+  text-decoration: none;
 }
 
 main {
@@ -91,8 +95,13 @@ h1 {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
+  color: var(--light-grey);
 }
 
 .actions {
   padding-top: 1rem;
+}
+
+.actions input {
+  color: var(--pure-black);
 }
