@@ -5,6 +5,7 @@
   --light-grey: rgb(227, 227, 227);
   --pure-white: white;
   --pure-black: black;
+  --button-green: #5fb523;
 }
 
 * {
@@ -12,6 +13,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 .g-bg {
@@ -168,6 +171,10 @@ h1 {
   border-top: 1px solid #ccc;
 }
 
+.category-list {
+  list-style: none;
+}
+
 .cagetory-total {
   display: flex;
   justify-content: space-between;
@@ -187,4 +194,32 @@ h1 {
 
 .checkbox input {
   width: auto;
+}
+
+.button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--button-green);
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.button-border {
+  margin: 0.35rem;
+  border: 1px solid white;
+  padding: 0.65rem;
+}
+
+.button a {
+  color: var(--pure-white);
+}
+
+.button input {
+  padding: 0;
+  border: 0;
+  background-color: unset;
+  color: var(--pure-white);
+  font-size: 1rem;
 }

@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'When I open Groups index page', type: :feature do
   before(:each) do
+    User.delete_all
     @user = User.create(name: 'dan', email: 'dan@example.com', password: 'password')
     sleep(1)
 
@@ -12,6 +13,7 @@ RSpec.describe 'When I open Groups index page', type: :feature do
 
     @group1 = Group.create(user: @user, name: 'Office', icon: 'default.png')
     @purchase1 = Purchase.create(name: 'Paper', amount: 10.0, author: @user, groups: [@group1])
+    sleep(1)
 
     visit(groups_path)
   end
