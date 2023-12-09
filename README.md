@@ -71,7 +71,7 @@ The application is designed to keep track of all your expences associated with c
 
 
 ## 🎥 Loom Walkthrough <a name="loom-walkthrough"></a>
-- [Video Presentation](URL)
+- [Video Presentation](https://www.loom.com/share/bf099ae3af7d4560bfaf9f5cc8fc4cd5?sid=83827998-886d-420c-be53-78ea03396c79)
 
 ### Prerequisites
 
