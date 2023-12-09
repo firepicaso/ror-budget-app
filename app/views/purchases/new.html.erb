@@ -15,7 +15,9 @@
         <%= f.collection_check_boxes :group_ids, current_user.groups, :id, :name, :include_hidden => false %>
       </div>
       <div class="button">
-        <%= f.submit "Add a Transaction", data: { turbo: false }, class: "btn"  %>
+        <div class="button-border">
+          <%= f.submit "Add a Transaction", data: { turbo: false }, class: "btn"  %>
+        </div>
       </div>
     <% end %>    
   </section>
