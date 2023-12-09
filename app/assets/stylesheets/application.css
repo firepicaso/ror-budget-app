@@ -12,6 +12,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 .g-bg {
@@ -166,6 +168,10 @@ h1 {
   justify-content: space-between;
   padding: 0.5rem 0;
   border-top: 1px solid #ccc;
+}
+
+.category-list {
+  list-style: none;
 }
 
 .cagetory-total {
