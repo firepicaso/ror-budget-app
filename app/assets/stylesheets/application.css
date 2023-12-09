@@ -96,7 +96,7 @@ h1 {
   border: none;
   border-bottom: 1px solid #ccc;
   padding: 1rem 0;
-  color: var(--light-grey);
+  color: var(--darker-grey);
 }
 
 .actions {
