@@ -17,7 +17,7 @@ RSpec.describe 'When I open Purchases index page', type: :feature do
   end
 
   it 'shows the correct heading' do
-    expect(page).to have_content('Transactions')
+    expect(page).to have_content('DETAILS')
   end
 
   it 'shows the name of each purchase' do

@@ -6,12 +6,10 @@
   <section>
     <%= form_with model: @group, class: "form" do |f| %>
       <div class="field">
-        <%= f.label :name, "Name" %>
-        <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Name" %>
       </div>
       <div class="field">
-        <%= f.label :icon, "Icon link" %>
-        <%= f.text_field :icon, autofocus: true, autocomplete: "icon", value: 'default.png' %>
+        <%= f.text_field :icon, autofocus: true, autocomplete: "icon", value: 'default.png', placeholder: "Icon Link" %>
       </div>
         <div class="actions">
         <%= f.submit "Add a Category", data: { turbo: false }, class: "btn" %>
