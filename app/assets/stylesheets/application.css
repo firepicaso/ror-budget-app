@@ -1,6 +1,7 @@
 :root {
   --primary-color: #3778c2;
   --grey-background: #F4F5F8;
+  --darker-grey: rgb(139, 139, 139);
   --light-grey: rgb(227, 227, 227);
   --pure-white: white;
   --pure-black: black;
@@ -104,4 +105,13 @@ h1 {
 
 .actions input {
   color: var(--pure-black);
+}
+
+.below-form {
+  text-align: center;
+}
+
+.below-form a {
+  text-decoration: none;
+  color: var(--darker-grey);
 }
