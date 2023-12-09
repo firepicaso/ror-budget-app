@@ -1,0 +1,14 @@
+<header>
+  <%= link_to(image_tag('back.png', alt: 'Back'), group_purchases_path(params[:group_id]), class: 'back-button') %>
+  <h1>Details</h1>
+</header>
+<main>
+  <section>
+    <span><%= @purchase.name %></span>
+    <span><%= @purchase.amount %></span>
+  </section>
+  <section>
+    <%= link_to "edit", edit_group_purchase_path(params[:group_id], @purchase) %>
+    <%= button_to "delete",  {:controller => :purchases, :action => 'destroy'}, method: :delete %>
+  </section>
+</main>

@@ -1,0 +1,26 @@
+<header>
+  <%= link_to(image_tag('back.png', alt: 'Back'), pages_splash_path, class: 'back-button') %>
+  <h1>LOGIN</h1>
+</header>
+<main class="g-bg">
+  <section class="form w-bg">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.email_field :email, autocomplete: "email", placeholder: "Email" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "password", placeholder: "Password" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+    </section>
+    <section class="below-form">
+      <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+    </section>
+</main>
+
+

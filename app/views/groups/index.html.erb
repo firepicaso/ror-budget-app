@@ -1,0 +1,38 @@
+<header>
+  <h1>Categories</h1>
+</header>
+<main class="g-bg">
+  <section>
+    <% if @groups.empty? %>
+      <div class="empty">
+        <p>Please add a new category</p>
+      </div>
+    <% end %>
+    <ul class="category-list">
+      <% @groups.each do |group| %>
+        <% total_amount = total_amount(group) %>
+        <li class="w-bg">
+          <%= link_to group_purchases_url(group), data: { turbo: false }, class: 'item' do %>
+            <div class="category-card">
+              <div class="category-image-info">
+                <%= image_tag(check_url(group.icon), class: 'icon', alt: 'group icon') %>
+                <div class="category_info">
+                  <span class="name"><%= group.name %></span>
+                  <span class="date"><%= group.created_at.strftime('%d %b %Y') %></span>
+                </div>
+              </div>
+              <div class="category-amount">
+                <span class="amount">$<%= total_amount %></span>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+  <section class="button">
+    <div class="button-border">
+      <%= link_to "Add a Category", new_group_path, data: { turbo: false }  %>
+    </div>
+  </section>
+</main>

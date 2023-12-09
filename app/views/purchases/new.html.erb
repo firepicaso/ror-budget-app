@@ -1,0 +1,24 @@
+<header>
+  <%= link_to(image_tag('back.png', alt: 'Back'), group_purchases_path(params[:group_id]), class: 'back-button') %>
+  <h1>New Transaction</h1>
+</header>
+<main class="g-bg">
+  <section class="w-bg">
+    <%= form_with(url: group_purchases_path, model: @purchase, class: "form") do |f| %>
+      <div class="field">
+        <%= f.text_field :name, autocomplete: "name", placeholder: "Name of service" %>
+      </div>
+      <div class="field">
+        <%= f.text_field :amount, autocomplete: "amount", placeholder: "$10" %>
+      </div>
+      <div class="checkbox">
+        <%= f.collection_check_boxes :group_ids, current_user.groups, :id, :name, :include_hidden => false %>
+      </div>
+      <div class="button">
+        <div class="button-border">
+          <%= f.submit "Add a Transaction", data: { turbo: false }, class: "btn"  %>
+        </div>
+      </div>
+    <% end %>    
+  </section>
+</main>

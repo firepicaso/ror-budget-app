@@ -1,0 +1,21 @@
+<header>
+  <%= link_to(image_tag('back.png', alt: 'Back'), groups_path, class: 'back-button') %>
+  <h1>New Category</h1>
+</header>
+<main>
+  <section>
+    <%= form_with model: @group, class: "form" do |f| %>
+      <div class="field">
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Name" %>
+      </div>
+      <div class="field">
+        <%= f.text_field :icon, autofocus: true, autocomplete: "icon", value: 'default.png', placeholder: "Icon Link" %>
+      </div>
+      <div class="button">
+        <div class="button-border">
+          <%= f.submit "Add a Category", data: { turbo: false } %>
+        </div>
+      </div>
+    <% end %>
+  </section>
+</main>
