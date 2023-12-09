@@ -151,3 +151,18 @@ h1 {
   color: var(--pure-black);
   font-weight: 600;
 }
+
+.purchases-list {
+  margin: 0 1rem;
+}
+
+.purchases-list a {
+  color: var(--darker-grey);
+}
+
+.cagetory-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin: 0 1rem;
+}

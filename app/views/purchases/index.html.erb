@@ -1,19 +1,23 @@
 <header>
   <%= link_to(image_tag('back.png', alt: 'Back'), groups_path, class: 'back-button') %>
-  <h1>Transactions</h1>
+  <h1>DETAILS</h1>
 </header>
-<main>
-  <section>
-    <div>
-      <span><%= @group.name %></span>
-      <span>Total amount: $<%= total_amount(@group) %> </span>
-    </div>
-
+<main class="g-bg">
+  <section class="w-bg">
     <% if @purchases.empty? %>
       <%= button_to "delete", {:controller => :groups, :action => 'destroy', :id => @group.id }, :method => :delete %>
     <% end %>
-
-    <ul>
+    <%= link_to group_purchases_url(@group), data: { turbo: false }, class: 'item' do %>
+      <div class="category-card">
+        <div class="category-image-info">
+          <%= image_tag(check_url(@group.icon), class: 'icon', alt: 'group icon') %>
+          <div class="category_info">
+            <span class="name"><%= @group.name %></span>
+          </div>
+        </div>
+      </div>
+    <% end %>    
+    <ul class="purchases-list">
       <% @purchases.each do |purchase| %>
         <li>
           <%= link_to group_purchase_url(@group, purchase) do %>
@@ -23,8 +27,12 @@
         </li>
       <% end %>
     </ul>
+    <div class="cagetory-total">
+      <span>TOTAL PAYMENT</span>
+      <span>$<%= total_amount(@group) %></span>
+    </div>
   </section>
-  <section>
+  <section class="below-form">
     <%= link_to "Add a Transaction", new_group_purchase_path %>
   </section>
 </main>
