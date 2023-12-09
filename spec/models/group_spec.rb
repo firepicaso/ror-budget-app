@@ -6,6 +6,7 @@ RSpec.describe Group, type: :model do
   let(:no_icon) { { 'user' => @user, 'name' => 'Office' } }
 
   before :all do
+    User.delete_all
     @user = User.create(name: 'dan', email: 'dan@example.com', password: 'password')
   end
 
