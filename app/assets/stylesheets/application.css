@@ -1,7 +1,8 @@
 :root {
   --primary-color: #3778c2;
-  --text-color1: white;
-  --text-color2: black;
+  --grey-background: #F4F5F8;
+  --pure-white: white;
+  --pure-black: black;
 }
 
 * {
@@ -9,6 +10,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.g-bg {
+  background-color: var(--grey-background);  
+}
+
+.w-bg {
+  background-color: var(--pure-white);  
 }
 
 .splash-container {
@@ -30,7 +39,6 @@
 .login-button {
   display: flex;
   justify-content: center;
-  background-color: var(--primary-color);
   padding: 1rem;
   border-radius: 0.25rem;
   width: 95vw;
@@ -38,29 +46,53 @@
 }
 
 .login-button a {
-  color: var(--text-color1);
+  color: var(--pure-white);
 }
 
 .signup-button a {
-  color: var(--text-color2);
+  color: var(--pure-black);
+}
+
+main {
+  height: 100vh;
 }
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
   background-color: var(--primary-color);
   padding: 0.5rem 1rem;
 }
 
+section {
+  padding: 1.5rem 0.8rem;
+}
+
 .back-button img {
+  grid-column: 1;
   margin-right: 40px;
   max-width: 30px;
 }
 
 h1 {
-  color: var(--text-color1);
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--pure-white);
 }
 
 .splash-appicon h1 {
-  color: var(--text-color2);
+  color: var(--pure-black);
+}
+
+.form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.actions {
+  padding-top: 1rem;
 }

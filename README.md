@@ -64,8 +64,6 @@ The application is designed to keep track of all your expences associated with c
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Prerequisites
 
 In order to run this project you need:
