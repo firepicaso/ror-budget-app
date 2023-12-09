@@ -115,3 +115,39 @@ h1 {
   text-decoration: none;
   color: var(--darker-grey);
 }
+
+.category-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.category-card img {
+  max-width: 50px;
+}
+
+.category-image-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.category_info {
+  display: flex;
+  flex-direction: column;
+  color: var(--darker-grey);
+  gap: 0.8rem;
+}
+
+.date {
+  font-size: 0.65rem;
+}
+
+.amount {
+  color: var(--pure-black);
+  font-weight: 600;
+}
