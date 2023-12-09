@@ -5,6 +5,7 @@
   --light-grey: rgb(227, 227, 227);
   --pure-white: white;
   --pure-black: black;
+  --button-green: #43B73A;
 }
 
 * {
@@ -193,4 +194,18 @@ h1 {
 
 .checkbox input {
   width: auto;
+}
+
+.button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--button-green);
+  text-align: center;
+  padding: 1rem;
+}
+
+.button a {
+  color: var(--pure-white);
 }
