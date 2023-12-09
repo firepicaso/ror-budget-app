@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live-Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -63,6 +64,14 @@ The application is designed to keep track of all your expences associated with c
 - Monitor total amount spent on each categories
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [BudgetLover App](https://budgetlover.onrender.com)
+
+
+## 🎥 Loom Walkthrough <a name="loom-walkthrough"></a>
+- [Video Presentation](https://www.loom.com/share/bf099ae3af7d4560bfaf9f5cc8fc4cd5?sid=83827998-886d-420c-be53-78ea03396c79)
 
 ### Prerequisites
 
